@@ -24,6 +24,7 @@ nav {
   position: fixed;
   z-index: 999;
   padding-top: 5px;
+  box-shadow: 0 2px 20px rgba(128, 128, 128, 0.397);
 }
 
 nav ul {
@@ -73,10 +74,10 @@ header {
 .shop-name-container {
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 15px 30px 15px;
+  padding: 10px 15px 30px 15px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.932);
-  margin-top: 35vh;
+  background-color: rgb(255, 255, 255);
+  margin-top: 30vh;
   width: 500px;
 }
 
@@ -89,7 +90,7 @@ header {
 
 .shop-name-container hr {
   width: 380px;
-  background-color: black;
+  background-color: #9b734c;
   height: 3px;
   border: 0;
   margin-bottom: 22px;
@@ -174,7 +175,7 @@ header {
 
 
 /*------FOOD AND DRINK------*/
-.food-drink {
+.food-drink-container {
   text-align: center;
   display: flex;
   max-width: 1000px;
@@ -200,7 +201,7 @@ header {
   margin-top: 0px;
   width: 200px;
   margin-bottom: 50px;
-  background-color: black;
+  background-color: #9b734c;
   height: 3px;
   border: 0;
 }
@@ -211,35 +212,48 @@ header {
 }
 
 
-/*------FOOTER------*/
-footer {
-  padding-top: 70px;
+/*------HOURS------*/
+.hours {
+  padding-top: 130px;
+  padding-bottom: 100px;
   background-color: rgb(36, 36, 36);
-  height: 400px;
   width: 100%;
   color: white;
   display: flex;
+  justify-content: center; 
 }
 
-.hours h1, .contact h1 {
+.hours h1 {
   font-size: 3rem;
   letter-spacing: .6rem;
-  margin: 0;
+  margin: 0 15px 0 0;
 }
 
-.hours p, .contact p {
+.hours p{
   line-height: 30px;
   margin: 0;
 }
 
-.hours {
-  flex: 1;
-  display: flex;
-  justify-content: center; 
+
+/*------CONTACT------*/
+footer {
+  text-align: center;
+  color: white;
+  background-color: rgb(27, 27, 27);
+  padding-bottom: 5px;
 }
 
-.contact {
-  flex: 1;
-  display: flex;
-  justify-content: center; 
+.contact-container p{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  font-size: .7rem;
+}
+
+.instagram {
+  vertical-align: middle;
+}
+
+.facebook {
+  vertical-align: middle;
 }

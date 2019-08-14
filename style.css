@@ -90,7 +90,7 @@ header {
   letter-spacing: .6rem;
   margin-right: -.6rem;
   margin-bottom: 0;
-  font-feature-settings: "ffe" 0;
+  font-variant-ligatures: none;
 }
 
 .shop-name-container hr {

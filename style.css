@@ -3,6 +3,10 @@
   --color: rgb(27, 27, 27);
 }
 
+* {
+  font-variant-ligatures: none;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -90,7 +94,6 @@ header {
   letter-spacing: .6rem;
   margin-right: -.6rem;
   margin-bottom: 0;
-  font-variant-ligatures: none;
 }
 
 .shop-name-container hr {

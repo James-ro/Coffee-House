@@ -25,6 +25,8 @@ nav {
   z-index: 999;
   padding-top: 5px;
   box-shadow: 0 2px 20px #80808065;
+  animation-name: nav-slide;
+  animation-duration: 1s;
 }
 
 nav ul {
@@ -79,6 +81,8 @@ header {
   background-color: rgb(255, 255, 255);
   margin-top: 30vh;
   max-width: 500px;
+  animation-name: shop-name-fade;
+  animation-duration: 1s;
 }
 
 .shop-name-container h1 {
@@ -110,8 +114,10 @@ header {
 }
 
 .about-container {
+  position: relative;
   max-width: 700px;
   padding: 20px;
+  bottom: -20px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -261,7 +267,39 @@ footer {
 }
 
 
+/*------ANIMATION------*/
+.fade-in {
+  bottom: -50px;
+  opacity: 0;
+  transition: bottom 500ms ease-out, opacity 500ms ease-out;
+}
 
+.fade-in.appear {
+  opacity: 1;
+  bottom: 0px;
+}
+
+@keyframes nav-slide {
+  from {
+    margin-top: -40px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+}
+
+@keyframes shop-name-fade {
+  from {
+    opacity: 0;
+    margin-top: 35vh;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 30vh;
+  }
+}
 
 /*------MEDIA QUERIES------*/
 /* Extra small devices (phones, 600px and down) */
@@ -322,13 +360,8 @@ footer {
     padding: 4px;
     display: block;
     margin: 0px;
-}
+  } 
   .instagram, .facebook {
     display: none;
   }
-
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) 
-@media only screen and (min-width: 600px) {...} */
+}
